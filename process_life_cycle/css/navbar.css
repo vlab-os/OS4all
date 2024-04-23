@@ -1,0 +1,63 @@
+/* =====================================
+            COLOR VARIABLES
+   =====================================
+*/
+
+body {
+    margin: 0px;
+}
+
+:root {
+    --maroon: #922B21;
+    --light_grey: #CCD1D1;
+    --dark_grey: #616A6B;
+}
+
+/* ===================================== */
+
+
+.navbar {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: var(--dark_grey);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.navbar-element {
+    float: left;
+    margin-top: 5px;
+}
+
+.navbar-element a {
+    color: white;
+    display: block;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar-element a:hover {
+    background-color: white;
+    color: var(--dark_grey);
+    font-weight: bold;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-spacing: 5px;
+}
+
+.active {
+    background-color: white;
+    color: var(--dark_grey) !important;
+    font-weight: bold;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-spacing: 5px;
+}
+
+.navbar-element a:hover ::after {
+    border-radius: 0 0 0 20px;
+}

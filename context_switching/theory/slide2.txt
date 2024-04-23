@@ -1,0 +1,3 @@
+Context refers to the current execution state and information associated with a running process in an operating system.
+
+It represents a snapshot of the process’s execution at a particular point in time.

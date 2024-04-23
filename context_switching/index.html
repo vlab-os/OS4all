@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Context Switching OS</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/side_menu.css">
+    <link rel="stylesheet" href="./css/slides.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Javascripts -->
+    <script src="./js/side_menu.js"></script>
+    <script src="./js/slides.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <li class="navbar-element"><a href="../index.html" onclick="setActive(this)">Home</a></li>
+        <li class="navbar-element"><a class="active" href="#theory" onclick="setActive(this)">Theory</a></li>
+        <li class="navbar-element"><a href="#exercise" onclick="setActive(this)">Exercise</a></li>
+        <li class="navbar-element"><a href="#experiment" onclick="setActive(this)">Experiment</a></li>
+        <li class="navbar-element"><a href="#about" onclick="setActive(this)">About</a></li>
+    </div>
+
+    <!-- Main page div -->
+    <div>
+
+        <!-- Side Menu div -->
+        <button id="_openbtn" class="openbtn" onclick="openNav()">☰</button>
+        <div id="mySidebar" class="side_menu">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#about">What is context switching?</a>
+            <hr>
+            <a href="#services">What is context?</a>
+            <hr>
+            <a href="#clients">Why context switching?</a>
+            <hr>
+            <a href="#contact">When does context switch happen?</a>
+            <hr>
+            <a href="#">How does context switch happen?</a>
+            <hr>
+            <a href="#">What is user mode?</a>
+            <hr>
+            <a href="#">What is kernel mode?</a>
+            <hr>
+            <a href="#">What do the hardware do?</a>
+            <hr>
+            <a href="#">What else do the hardware do?</a>
+            <hr>
+            <a href="#">What is K-stack?</a>
+            <hr>
+            <a href="#">What is user stack?</a>
+            <hr>
+            <a href="#">Where do the kernel store the process information?</a>
+            <hr>
+            <a href="#">What is PCB?</a>
+            <hr>
+            <a href="#">Mechanism of context switching</a>
+            <hr>
+            <a href="#">Flow of context switching</a>
+        </div>
+        <!-- Slide container div -->
+        <div id="op_slide_pic">
+
+            <div class="op_btns_prev">
+                <i onclick="prev_slide()" class="fa fa-angle-double-left"></i>
+            </div>
+            <div id="slide_container">
+                <div id="title"> Context Switching </div>
+                <div id="slides">
+                    <!-- Text container div -->
+                    <div class="slide_text">
+                        <h1 id="heading">What is context switching?</h1>
+                        <div id="content" class="text">
+                            Context switching is a fundamental operation in modern operating systems that occurs when a multitasking operating system switches the execution content from one proess or thread to another.
+                            
+                            <br><br>Context switching is a part of process management subsystem.
+                        </div>
+                    </div>
+                </div>
+                <!-- Picture container div -->
+                <div id="picture_container">
+                    <img id="pic" src="./slide_images/slide_1.png">
+                </div>
+            </div>
+            <div class="op_btns_next">
+                <i onclick="next_slide()" class="fa fa-angle-double-right"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
